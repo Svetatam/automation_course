@@ -1,5 +1,5 @@
 // создание класса B (с методами color и size)
-import {Transport} from `.transport.js`;
+import {Transport} from './transport.mjs';
 export class Car extends Transport {
   color(color) {
     this.color = color;

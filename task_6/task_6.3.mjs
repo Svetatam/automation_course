@@ -1,7 +1,7 @@
 // создание экземпляра класса В и вызов методов класса A и класса B
 
  
-import {Car} from `./car.js`;
+import {Car} from './car.mjs';
 let car = new Car('Volvo');
  
 car.color(`Black`); // Volvo Black color
