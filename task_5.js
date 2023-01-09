@@ -1,5 +1,5 @@
 //   Продемонстрировать работу try…catch…finally
-// run in browser
+// please, run in browser
 
 //Вариант1
 const fnWithError = () => {
@@ -44,6 +44,7 @@ finally{
 
 
 //Вариант3
+// please, run in browser
 let json = '{"name":"Max", "age": 30}';
 try {
 let user = JSON.parse(json);

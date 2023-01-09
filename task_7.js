@@ -2,13 +2,17 @@
 
 
 //Только callback
+//run in browser
 function printMyName () {
     console.log ('Sveta')
   }
   setTimeout(printMyName, 1000)
 
 
+
+
  //Только promises (resolve + reject flow)
+  //run in browser
  let promise = new Promise((resolve, reject) => {
  
     setTimeout(() => {
@@ -17,8 +21,7 @@ function printMyName () {
     }, 1000);
    
   });
-   
-  // promise.then навешивает обработчики на успешный результат или ошибку
+     // promise.then навешивает обработчики на успешный результат или ошибку
   promise
     .then(
       result => {
@@ -32,7 +35,11 @@ function printMyName () {
   );
 
 
+
+
+
   //Только async/await
+  //run in browser
   const getData = async(url) => {
     const res = await fetch (url)
     const json = await res.json()
@@ -48,7 +55,11 @@ function printMyName () {
     } // try in web browser, await is only valid in async functions
 
     
+
+
+
   // Комбинация callback + promise
+  //run in browser
   function printResult(value) {
     console.log(value);
     }
@@ -56,11 +67,15 @@ function printMyName () {
     fetch('https://jsonplaceholder.typicode.com/todos/3')
     .then (response => response.json()) //resolve
     .then (printResult) 
-    .then((value)=>console.log(‘!!!!’, value))
+    .then((value)=>console.log('!!!!', value))
     .catch (error => console.log(error.message))//reject
     
 
+
+
+
     //Комбинация promise + async/await
+    // run in browser
     const timerPromise = () =>
   new Promise((resolve, reject) =>
   setTimeout(()=> resolve(), 2000))

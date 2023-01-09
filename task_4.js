@@ -1,3 +1,4 @@
+
 //Продемонстрировать работу switch…case
 let color = 'red';
   
