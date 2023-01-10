@@ -5,7 +5,7 @@
 //Результат - [2, 4, 8]
 
 let arrayOfNumbers = [2, 4, 5, 7, 8];
-function displayEvenNum (arrayOfNumbers) {
-  return arrayOfNumbers.filter (el =>el%2===0)
+function displayEvenNum(arrayOfNumbers) {
+  return arrayOfNumbers.filter((el) => el % 2 === 0);
 }
-console.log(displayEvenNum(arrayOfNumbers)) // [2, 4, 8]
+console.log(displayEvenNum(arrayOfNumbers)); // [2, 4, 8]

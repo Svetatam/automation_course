@@ -6,12 +6,11 @@
 //Исходный массив – [‘Minsk’, ‘London, ‘Berlin’, ‘Toronto’, ‘Paris’, ‘Moscow’]
 //Результат - [‘Minsk’, ‘Berlin’, ‘Toronto’]
 
-function withoutGeese (list) {
-    return list.filter(item => !geese.includes(item));
-   }
-  let geese = ['London', 'Paris', 'Moscow'];
-   
-  let city =['Minsk', 'London', 'Berlin', 'Toronto', 'Paris', 'Moscow'];
-   
-  console.log (withoutGeese (city));
-  
+function withoutGeese(list) {
+  return list.filter((item) => !geese.includes(item));
+}
+let geese = ["London", "Paris", "Moscow"];
+
+let city = ["Minsk", "London", "Berlin", "Toronto", "Paris", "Moscow"];
+
+console.log(withoutGeese(city));

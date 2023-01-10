@@ -5,7 +5,7 @@
 //Результат – “Я_люблю_Javascript”
 
 let str = "Я люблю Javascript";
- function replaceSpaceToUndescore(str) {
-return str.replace(/ /g, '_');
+function replaceSpaceToUndescore(str) {
+  return str.replace(/ /g, "_");
 }
-console.log(replaceSpaceToUndescore(str)) // Я_люблю_Javascript
+console.log(replaceSpaceToUndescore(str)); // Я_люблю_Javascript
